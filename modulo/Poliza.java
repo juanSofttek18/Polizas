@@ -2,22 +2,22 @@ package helloworld.liquidaciondiversos.modulo;
 
 public class Poliza {
 
-    private Product prodcuto;
+    private Product producto;
     private Cliente cliente;
     private double capitalAsegurado;
 
     public Poliza(Product prodcuto, Cliente cliente, double capitalAsegurado) {
-        this.prodcuto = prodcuto;
+        this.producto = prodcuto;
         this.cliente = cliente;
         this.capitalAsegurado = capitalAsegurado;
     }
 
     public Product getProdcuto() {
-        return prodcuto;
+        return producto;
     }
 
     public void setProdcuto(Product prodcuto) {
-        this.prodcuto = prodcuto;
+        this.producto = prodcuto;
     }
 
     public Cliente getCliente() {

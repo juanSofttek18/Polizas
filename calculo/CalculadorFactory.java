@@ -4,7 +4,7 @@ import helloworld.liquidaciondiversos.modulo.PaymentType;
 
 public class CalculadorFactory {
 
-    public static CaculadorPago getCalculador(PaymentType tipo){
+    public static CalculadorPago getCalculador(PaymentType tipo){
         if (tipo == PaymentType.PRIMER_RIESGO) {
             return new CalculadorPrimerRiesgo();
         } else if (tipo == PaymentType.REPOSICION_NUEVO) {

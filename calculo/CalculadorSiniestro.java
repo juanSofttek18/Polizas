@@ -22,12 +22,13 @@ public class CalculadorSiniestro {
 
         for (BienAfectado bienAfectado : bienesAfectados) {
             for (ProductWarranty productWarranty : producto.getProductWarranties()) {
-                if (productWarranty.getRisk().equals(riesgo) && productWarranty.getWarranty().equals(bienAfectado.getGarantia())) {
+                if (productWarranty.getRisk().getCode().equals(riesgo.getCode()) && productWarranty.getWarranty().getCode().equals(bienAfectado.getGarantia().getCode())) {
                     if (!productWarranty.isExcluded()) {
                         calculador=CalculadorFactory.getCalculador(productWarranty.getPaymentType());
-                        resultado=calculador.calcular(productWarranty.getCapitalInsured(), bienAfectado.getValorAfectado());
+                        resultado=calculador.calcularPago(bienAfectado, productWarranty);
                         total+=resultado;
                     }
+                    break;
                 }
             }
         }
