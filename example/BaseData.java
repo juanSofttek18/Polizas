@@ -149,4 +149,17 @@ public class BaseData {
         return warranties;
 
     }
+
+        public Map<String, Product> getProducts() {
+            return products;
+        }
+
+        public Map<String, Risk> getRisks() {
+            return risks;
+        }
+
+        public Map<String, Warranty> getWarranties() {
+            return warranties;
+        }
+
 }
