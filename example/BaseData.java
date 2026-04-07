@@ -1,6 +1,6 @@
 package helloworld.liquidaciondiversos.example;
 
-import helloworld.liquidaciondiversos.*;
+import helloworld.liquidaciondiversos.modulo.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;

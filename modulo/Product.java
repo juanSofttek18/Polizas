@@ -1,4 +1,4 @@
-package helloworld.liquidaciondiversos;
+package helloworld.liquidaciondiversos.modulo;
 
 
 import lombok.Data;
